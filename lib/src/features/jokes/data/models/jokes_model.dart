@@ -30,4 +30,9 @@ class JokeModel extends Equatable {
   Map<String, dynamic> toJson() => _$JokeModelToJson(this);
   @override
   List<Object?> get props => [];
+
+  @override
+  String toString() {
+    return '<JokeModel> -> category :$category, delivery :$delivery,safe :$safe,setup :$setup,type :$type';
+  }
 }
